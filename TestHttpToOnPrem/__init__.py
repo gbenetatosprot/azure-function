@@ -13,9 +13,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
         sock = socket.create_connection((target_ip, target_port), timeout=5)
         sock.close()
-        output.append(f"✅ TCP connection to {target_ip}:{target_port} succeeded.")
+        output.append(f"PAIZEI MALAKA {target_ip}:{target_port} succeeded.")
         return func.HttpResponse("\n".join(output), status_code=200)
     except Exception as e:
-        output.append(f"❌ TCP connection failed: {e}")
+        output.append(f"PAPARIA: {e}")
         output.append(traceback.format_exc())
         return func.HttpResponse("\n".join(output), status_code=404)
