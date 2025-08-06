@@ -8,7 +8,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     target_port = 80  # Change to 443 or whatever you want
 
     output = []
-    output.append(f"📡 Ping check to {target_ip}:{target_port}")
+    output.append(f"TSEKARO TO:  {target_ip}:{target_port}")
 
     try:
         sock = socket.create_connection((target_ip, target_port), timeout=5)
